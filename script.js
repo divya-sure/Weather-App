@@ -5,7 +5,7 @@ async function getData() {
         alert("Please enter city name");
         return;
     }
-    let API =  `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=7`;
+    let API =  `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=7`;
     let res=await axios.get(API);
     let data = res.data;
     forecastDetails(data);
