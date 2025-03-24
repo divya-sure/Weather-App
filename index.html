@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="text-white">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h1>WEATHER APP</h1>
+            </div>
+            <main class="main col-md-7 col-sm-12 px-4">
+                <div class="row my-3">
+                    <div class="col-md-8 col-sm-8">
+                        <input type="text" placeholder="Enter City Name" class="form-control" id="cityNameId">
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <button class="btn btn-success w-100" onclick="getData()">Search</button>
+                    </div>
+                </div>
+                <div class="weather row text-white rounded p-3">
+                    <div class="col-md-6" id="currentDetId"></div>
+                    <div class="col-md-6 text-center">
+                        <div id="iconId"></div>
+                    </div>
+                </div>
+                <div class="row forecast  text-white rounded mt-1 pt-3 color">
+                    <div class="row d-flex" id="today">
+                        <div><h5>TODAY FORECAST</h5></div>
+                    </div>
+                    <div class="row text-center container">
+                        <div id="forecastId" class="row forecast text-white rounded p-3"></div>
+                    </div>
+                </div>
+                <div class="row forecast  text-white rounded mt-3 p-3 color">
+                    <h5>AIR CONDITIONS</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div><i class="fa-solid fa-temperature-quarter"></i><span>Real Feel</span></div>
+                            <div class="realF" id="realFeel"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div><i class="fas fa-wind"></i><span>Wind</span></div>
+                            <div class="realF" id="wind"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div><i class="fa-solid fa-droplet"></i><span>Chance of Rain</span></div>
+                            <div class="realF" id="chancetorain"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div><i class="fa-solid fa-sun"></i><span>UV Index</span></div>
+                            <div class="realF" id="uvindex"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside class="right col-md-4 col-sm-12  text-white p-3 color">
+                <h5>7-DAY FORECAST</h5>
+                <div id="weekForecastId" class="row forecastseven text-white d-flex rounded mt-3 p-3"></div>
+            </aside>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/89216576b6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
