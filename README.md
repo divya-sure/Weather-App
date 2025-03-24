@@ -1,4 +1,4 @@
-Weather Application
+#Weather Application
 
 Live URL :
 
@@ -10,24 +10,17 @@ This is a simple Weather Application built using HTML, CSS, and JavaScript. It f
 
 🚀 Features
 
-Current Weather Data: Fetches real-time weather information.
-
-7-Day Forecast: Displays upcoming weather conditions.
-
-Search Functionality: Users can search for weather updates of any city.
-
-Responsive Design: Works on all devices (mobile, tablet, and desktop).
-
-API Integration: Uses WeatherAPI to retrieve weather data.
+- Current Weather Data: Fetches real-time weather information.
+- 7-Day Forecast: Displays upcoming weather conditions.
+- Search Functionality: Users can search for weather updates of any city.
+- Responsive Design: Works on all devices (mobile, tablet, and desktop).
+- API Integration: Uses WeatherAPI to retrieve weather data.
 
 🛠️ Technologies Used
 
 HTML: Structure of the application.
-
 CSS: Styling and responsive design.
-
 JavaScript: Fetching and displaying data dynamically.
-
 Weather API: To retrieve weather information.
 
 📌 API Configuration
@@ -42,25 +35,19 @@ const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=city
 📱 Responsive Design
 
 Uses CSS Media Queries to ensure the UI adapts to different screen sizes.
-
 Mobile-first approach for better accessibility.
 
 ⚠️ Troubleshooting
 
 If the app doesn’t display data, check:
-
 API key validity.
-
 Browser console for CORS errors.
-
 Network connection.
 
 💡 Future Enhancements
 
 Dark mode support.
-
 More detailed weather insights (humidity, wind speed, UV index).
-
 Option to save favorite locations.
 
 📜 License
